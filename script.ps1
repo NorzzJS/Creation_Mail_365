@@ -1,4 +1,4 @@
-$users = Import-Csv -Path "C:\Z-test-PS\test_crea_mail2.csv"
+$users = Import-Csv -Path #"C:...\.csv"
 foreach ($user in $users) {
     try {
         if ($user.UsageLocation.Length -ne 2) {
