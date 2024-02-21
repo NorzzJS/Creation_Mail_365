@@ -1,3 +1,20 @@
+####################################################################################
+#                                                                                  #
+#  Install-Module -Name Microsoft.Graph -Scope CurrentUser -Force                  #
+#  Import-Module Microsoft.Graph                                                   #
+#  Connect-MgAccount -Scopes "User.ReadWrite.All", "Directory.ReadWrite.All"       #
+#                                                                                  #
+####################################################################################
+
+####################################################################################
+#                                                                                  #
+#  Connect-MsolService                                                             #
+#  Connect-MgGraph                                                                 #
+#  94763226-9b3c-4e75-a931-5c89701abe66 = SkuId licences A1                        #
+#                                                                                  #
+####################################################################################
+
+
 $users = Import-Csv -Path #"C:...\.csv"
 foreach ($user in $users) {
     try {
